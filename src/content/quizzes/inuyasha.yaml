@@ -1,0 +1,356 @@
+title: 犬夜叉 完全マスタークイズ
+description: 基本から超難問まで！犬夜叉の世界を徹底的にチェック！全35問で幅広い難易度のクイズに挑戦しよう！
+questions:
+  # 易しい問題（問1-10）- 基本的なキャラクターと物語の設定
+  - question: 主人公・犬夜叉は何と人間のハーフ？
+    choices:
+      - 天狗
+      - 妖怪
+      - 神
+      - 鬼
+    correctAnswer: 1
+    explanation: 犬夜叉は大妖怪・犬の大将と人間の女性・十六夜の間に生まれた半妖です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: ヒロイン・かごめの実家の職業は？
+    choices:
+      - お寺
+      - 神社
+      - 旅館
+      - 道場
+    correctAnswer: 1
+    explanation: 日暮かごめは神社の娘で、神社の井戸から戦国時代にタイムスリップします。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81
+
+  - question: かごめが戦国時代へタイムスリップするきっかけとなった場所は？
+    choices:
+      - 蔵
+      - 井戸
+      - 洞窟
+      - 鳥居
+    correctAnswer: 1
+    explanation: かごめは神社の骨喰いの井戸から戦国時代へタイムスリップしました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81
+
+  - question: 犬夜叉の武器である妖刀の名前は？
+    choices:
+      - 天生牙
+      - 鉄砕牙
+      - 叢雲牙
+      - 闘鬼神
+    correctAnswer: 1
+    explanation: 犬夜叉が使う妖刀は鉄砕牙です。父・犬の大将の遺品で、強大な妖力を秘めています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 犬夜叉の異母兄の名前は？
+    choices:
+      - 殺生丸
+      - 神楽
+      - 奈落
+      - 琥珀
+    correctAnswer: 0
+    explanation: 殺生丸は犬夜叉の異母兄で、純血の大妖怪です。当初は犬夜叉を敵視していました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E6%AE%BA%E7%94%9F%E4%B8%B8
+
+  - question: 物語の主要な敵である奈落が狙っているものは？
+    choices:
+      - 四魂の玉
+      - 鉄砕牙
+      - 不老不死の薬
+      - 黄泉の国
+    correctAnswer: 0
+    explanation: 奈落は四魂の玉を完成させて、強大な力を手に入れようとしています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E5%A5%88%E8%90%BD
+
+  - question: 弥勒の職業は？
+    choices:
+      - 侍
+      - 法師
+      - 医者
+      - 商人
+    correctAnswer: 1
+    explanation: 弥勒は法師で、右手に風穴という呪いを持っています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E5%BC%A5%E5%8B%92
+
+  - question: 珊瑚の職業は？
+    choices:
+      - 巫女
+      - 妖怪退治屋
+      - 忍者
+      - 薬師
+    correctAnswer: 1
+    explanation: 珊瑚は妖怪退治を生業とする一族の出身で、優れた戦闘能力を持っています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%8F%8A%E7%91%9A
+
+  - question: 七宝は何という種族の妖怪？
+    choices:
+      - 狐
+      - 狸
+      - 猫
+      - 犬
+    correctAnswer: 0
+    explanation: 七宝は狐妖怪の子供で、変身術を使うことができます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E4%B8%83%E5%AE%9D
+
+  - question: かごめが「おすわり」と言うと犬夜叉に何が起こる？
+    choices:
+      - 眠ってしまう
+      - 地面に叩きつけられる
+      - 力が抜ける
+      - 動けなくなる
+    correctAnswer: 1
+    explanation: かごめが「おすわり」と言うと、犬夜叉の首輪が反応して地面に叩きつけられます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81
+
+  # 中級問題（問11-20）- より詳しいストーリーやキャラクター設定
+  - question: 犬夜叉と桔梗はどのような関係だった？
+    choices:
+      - 兄妹
+      - 恋人
+      - 主従
+      - 師弟
+    correctAnswer: 1
+    explanation: 桔梗は犬夜叉が愛した巫女で、二人は互いに愛し合っていましたが、奈落の罠により悲劇的な運命を辿りました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E6%A1%94%E6%A2%97
+
+  - question: 弥勒の右手にある風穴の呪いは誰がかけたもの？
+    choices:
+      - 奈落
+      - 殺生丸
+      - 神楽
+      - 桔梗
+    correctAnswer: 0
+    explanation: 風穴の呪いは奈落が弥勒の祖父にかけたもので、代々受け継がれています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E5%BC%A5%E5%8B%92
+
+  - question: 殺生丸が持つ刀・天生牙の特殊な能力は？
+    choices:
+      - 死者を蘇らせる
+      - 時を止める
+      - 空間を切り裂く
+      - 妖力を封じる
+    correctAnswer: 0
+    explanation: 天生牙は冥界の使者を斬ることで、一度だけ死者を蘇らせることができます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E6%AE%BA%E7%94%9F%E4%B8%B8
+
+  - question: 珊瑚の弟の名前は？
+    choices:
+      - 琥珀
+      - 雲母
+      - 鋼牙
+      - 楓
+    correctAnswer: 0
+    explanation: 琥珀は珊瑚の弟で、奈落に操られて家族を殺してしまうという悲劇を経験します。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%90%A5%E7%8F%80
+
+  - question: 犬夜叉が新月の夜になるとどうなる？
+    choices:
+      - 力が倍増する
+      - 人間になる
+      - 完全な妖怪になる
+      - 眠り続ける
+    correctAnswer: 1
+    explanation: 半妖の犬夜叉は新月の夜になると妖力を失い、完全な人間の姿になります。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 神楽の能力は何を操ること？
+    choices:
+      - 炎
+      - 風
+      - 水
+      - 雷
+    correctAnswer: 1
+    explanation: 神楽は風を操る能力を持つ奈落の分身で、風の舞を使って戦います。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%A5%9E%E6%A5%BD
+
+  - question: 鉄砕牙の最初の奥義は？
+    choices:
+      - 風の傷
+      - 爆流破
+      - 金剛槍破
+      - 冥道残月破
+    correctAnswer: 0
+    explanation: 風の傷は鉄砕牙の最初の大技で、妖気の渦を斬ることで強大な破壊力を生み出します。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 珊瑚の相棒である妖怪猫の名前は？
+    choices:
+      - 雲母
+      - 琥珀
+      - 桔梗
+      - 楓
+    correctAnswer: 0
+    explanation: 雲母（きらら）は二尾の猫妖怪で、珊瑚の忠実な相棒として共に戦います。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E9%9B%B2%E6%AF%8D
+
+  - question: 鋼牙は何という種族の妖怪？
+    choices:
+      - 狼
+      - 虎
+      - 熊
+      - 竜
+    correctAnswer: 0
+    explanation: 鋼牙は狼妖怪の頭領で、かごめに恋心を抱き、犬夜叉とライバル関係になります。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E9%8B%BC%E7%89%99
+
+  - question: 奈落が元々何者だったか？
+    choices:
+      - 侍
+      - 盗賊
+      - 法師
+      - 医者
+    correctAnswer: 1
+    explanation: 奈落は元々鬼蜘蛛という名の盗賊で、桔梗への想いから妖怪と融合して生まれ変わりました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E5%A5%88%E8%90%BD
+
+  # 上級問題（問21-30）- 詳細な設定や複雑な関係性
+  - question: 犬夜叉の父である犬の大将の正式な呼び名は？
+    choices:
+      - 闘牙王
+      - 天牙王
+      - 妖牙王
+      - 覇牙王
+    correctAnswer: 0
+    explanation: 犬夜叉と殺生丸の父は闘牙王と呼ばれる大妖怪で、西国を統べていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E9%97%98%E7%89%99%E7%8E%8B
+
+  - question: 桔梗が犬夜叉を封印した神木は何？
+    choices:
+      - 桜の木
+      - 梅の木
+      - 松の木
+      - 時代樹（ご神木）
+    correctAnswer: 3
+    explanation: 桔梗は奈落に騙されて犬夜叉を時代樹（ご神木）に封印しました。50年後、かごめによって封印が解かれます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 刀々斎が鍛えた三本の妖刀のうち、叢雲牙を持っていたのは誰？
+    choices:
+      - 犬夜叉の父
+      - 殺生丸
+      - 刀々斎自身
+      - 奈落
+    correctAnswer: 2
+    explanation: 叢雲牙は刀々斎が自身のために作った妖刀で、後に犬夜叉が一時的に使用しました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E5%88%80%E3%80%85%E6%96%8E
+
+  - question: 神楽が奈落から自由になりたいと願った理由は？
+    choices:
+      - 奈落が心臓を握っているから
+      - 奈落に弱点を知られているから
+      - 奈落の呪いがかかっているから
+      - 奈落と血の契約をしているから
+    correctAnswer: 0
+    explanation: 神楽は奈落の分身として生まれましたが、心臓を奈落に握られており、自由を求めていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%A5%9E%E6%A5%BD
+
+  - question: 四魂の玉の中で最も穢れやすい魂は？
+    choices:
+      - 勇
+      - 親
+      - 愛
+      - 智
+    correctAnswer: 2
+    explanation: 四魂の玉は荒魂（勇）・和魂（親）・幸魂（愛）・奇魂（智）から成り、愛の魂が最も穢れやすいとされています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 殺生丸が最初に持っていた鉄砕牙の代わりとなる刀の名前は？
+    choices:
+      - 闘鬼神
+      - 人間の腕
+      - 刀々斎の杖
+      - 妖刀
+    correctAnswer: 0
+    explanation: 殺生丸は鉄砕牙を奪えなかった後、闘鬼神という妖刀を手に入れましたが、それも鉄砕牙に及びませんでした。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E6%AE%BA%E7%94%9F%E4%B8%B8
+
+  - question: 弥勒の風穴はいずれどうなる運命？
+    choices:
+      - 永遠に残る
+      - 自然に消える
+      - 持ち主を吸い込む
+      - 世界を飲み込む
+    correctAnswer: 2
+    explanation: 風穴は代を重ねるごとに大きくなり、最終的には持ち主自身を吸い込んでしまう呪いです。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E5%BC%A5%E5%8B%92
+
+  - question: かごめが四魂の玉を見つける能力を持つ理由は？
+    choices:
+      - 桔梗の生まれ変わりだから
+      - 神社の娘だから
+      - 霊力が強いから
+      - 四魂の玉に選ばれたから
+    correctAnswer: 0
+    explanation: かごめは桔梗の生まれ変わりであり、そのため四魂の玉を感知し、浄化する力を持っています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81
+
+  - question: 奈落の最初の分身として生まれたのは誰？
+    choices:
+      - 神楽
+      - 神無
+      - 悟心鬼
+      - 赤子
+    correctAnswer: 1
+    explanation: 神無は奈落が最初に生み出した分身で、結界を張る能力を持っていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E5%A5%88%E8%90%BD%E3%81%AE%E5%88%86%E8%BA%AB
+
+  - question: 鉄砕牙の究極奥義である「冥道残月破」は何を斬る技？
+    choices:
+      - 空間
+      - 時間
+      - 冥界への道
+      - 妖気
+    correctAnswer: 2
+    explanation: 冥道残月破は鉄砕牙の最強技で、冥界への道を斬り開き、敵を冥界に送り込む技です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  # 超上級問題（問31-35）- 極めて詳細な知識が必要
+  - question: 犬夜叉が使う技「金剛槍破」の原理は？
+    choices:
+      - 相手の妖気を吸収する
+      - 相手の技を跳ね返す
+      - 相手の結界を破る
+      - 相手の妖力を奪う
+    correctAnswer: 1
+    explanation: 金剛槍破は相手の妖気を利用して、敵の技をそのまま跳ね返す技です。奈落との戦いで会得しました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 殺生丸の母親の正体は？
+    choices:
+      - 月の女神
+      - 犬の妖怪の姫
+      - 天女
+      - 竜の化身
+    correctAnswer: 1
+    explanation: 殺生丸の母は名前は明かされていませんが、犬の妖怪の大貴族であり、冥界にも影響力を持つ強大な妖怪です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E6%AE%BA%E7%94%9F%E4%B8%B8%E3%81%AE%E6%AF%8D
+
+  - question: 四魂の玉を最初に作った巫女の名前は？
+    choices:
+      - 楓
+      - 翠子
+      - 桔梗
+      - みどり子
+    correctAnswer: 3
+    explanation: 四魂の玉はみどり子という巫女が、自分の魂と妖怪との戦いの中で生み出したものです。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 奈落が最終的に手に入れようとした究極の力は何？
+    choices:
+      - 完全な四魂の玉
+      - 不老不死
+      - 神の力
+      - 冥界の支配
+    correctAnswer: 0
+    explanation: 奈落は完全な四魂の玉を手に入れ、最強の妖怪になることを目指していました。最終的には四魂の玉そのものになろうとしました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E5%A5%88%E8%90%BD
+
+  - question: 犬夜叉の血が覚醒して妖怪化した時に唯一止められるものは？
+    choices:
+      - 鉄砕牙
+      - かごめの声
+      - 桔梗の矢
+      - 殺生丸の天生牙
+    correctAnswer: 0
+    explanation: 犬夜叉が妖怪化して暴走した時、父が遺した鉄砕牙の鞘がバリアを張り、犬夜叉を正気に戻します。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9#%E7%8A%AC%E5%A4%9C%E5%8F%89
