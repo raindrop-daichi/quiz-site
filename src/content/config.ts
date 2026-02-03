@@ -11,6 +11,7 @@ const quizzesCollection = defineCollection({
         choices: z.array(z.string()).length(4),
         correctAnswer: z.number().min(0).max(3),
         explanation: z.string(),
+        referenceUrl: z.string().url().optional(),
       })
     ),
   }),

@@ -9,6 +9,7 @@ questions:
       - C++のフレームワーク
     correctAnswer: 1
     explanation: TypeScriptはJavaScriptのスーパーセットで、静的型付けを追加したプログラミング言語です。
+    referenceUrl: https://www.typescriptlang.org/docs/
 
   - question: Astroの特徴はどれですか？
     choices:
@@ -18,6 +19,7 @@ questions:
       - データベース管理システム
     correctAnswer: 2
     explanation: Astroは静的サイトジェネレーターで、高速なWebサイトを構築するためのフレームワークです。
+    referenceUrl: https://docs.astro.build/
 
   - question: pnpmの特徴は？
     choices:
@@ -27,6 +29,7 @@ questions:
       - データベースツール
     correctAnswer: 0
     explanation: pnpmはディスク容量を節約し、npmより高速なパッケージマネージャーです。
+    referenceUrl: https://pnpm.io/
 
   - question: GitHub Pagesで静的サイトをホスティングできますか？
     choices:
@@ -36,3 +39,4 @@ questions:
       - サーバーが必要
     correctAnswer: 1
     explanation: GitHub Pagesは無料で静的サイトをホスティングできるサービスです。
+    referenceUrl: https://docs.github.com/pages
