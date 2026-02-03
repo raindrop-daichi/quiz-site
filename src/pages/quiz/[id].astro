@@ -139,7 +139,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       const referenceLink = document.getElementById('reference-link');
       if (question.referenceUrl && referenceLinkContainer && referenceLink) {
         referenceLink.href = question.referenceUrl;
-        referenceLink.textContent = question.referenceUrl;
+        // Extract domain name for better readability
+        try {
+          const url = new URL(question.referenceUrl);
+          referenceLink.textContent = url.hostname.replace('www.', '');
+        } catch {
+          referenceLink.textContent = question.referenceUrl;
+        }
         referenceLinkContainer.style.display = 'block';
       } else if (referenceLinkContainer) {
         referenceLinkContainer.style.display = 'none';
