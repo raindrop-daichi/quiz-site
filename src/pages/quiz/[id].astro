@@ -22,36 +22,36 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </div>
 
     <div id="quiz-content">
-      <div class="progress-container">
+      <div class="progress-container" role="region" aria-label="クイズの進捗">
         <div class="progress-text">
-          <span>問題 <span id="current-question">1</span> / <span id="total-questions">{quiz.data.questions.length}</span></span>
-          <span>スコア: <span id="score">0</span> / <span id="attempted">0</span></span>
+          <span aria-live="polite">問題 <span id="current-question">1</span> / <span id="total-questions">{quiz.data.questions.length}</span></span>
+          <span aria-live="polite">スコア: <span id="score">0</span> / <span id="attempted">0</span></span>
         </div>
-        <div class="progress-bar">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="クイズの進捗">
           <div id="progress-fill" class="progress-fill"></div>
         </div>
       </div>
 
-      <div id="question-container">
+      <div id="question-container" role="main" aria-live="polite">
         <h2 id="question-text"></h2>
-        <div id="choices-container" class="choices-container"></div>
+        <div id="choices-container" class="choices-container" role="group" aria-label="選択肢"></div>
       </div>
 
-      <div id="explanation-container" class="explanation-container" style="display: none;">
+      <div id="explanation-container" class="explanation-container" style="display: none;" role="region" aria-label="解説">
         <h3>解説</h3>
         <p id="explanation-text"></p>
-        <button id="next-button" class="next-button">次の問題</button>
+        <button id="next-button" class="next-button" aria-label="次の問題へ進む">次の問題</button>
       </div>
 
-      <div id="result-container" class="result-container" style="display: none;">
+      <div id="result-container" class="result-container" style="display: none;" role="region" aria-label="クイズの結果">
         <h2>結果</h2>
         <div class="result-score">
-          <p class="final-score">あなたのスコア: <span id="final-score"></span> / <span id="final-total"></span></p>
-          <p class="percentage">正答率: <span id="percentage"></span>%</p>
+          <p class="final-score" aria-live="polite">あなたのスコア: <span id="final-score"></span> / <span id="final-total"></span></p>
+          <p class="percentage" aria-live="polite">正答率: <span id="percentage"></span>%</p>
         </div>
         <div class="result-actions">
-          <button id="retry-button" class="retry-button">もう一度挑戦</button>
-          <a href={base} class="home-button">ホームに戻る</a>
+          <button id="retry-button" class="retry-button" aria-label="クイズをもう一度挑戦する">もう一度挑戦</button>
+          <a href={base} class="home-button" aria-label="ホームページに戻る">ホームに戻る</a>
         </div>
       </div>
     </div>
@@ -59,18 +59,79 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 </Layout>
 
 <script is:inline define:vars={{ quizData: quiz.data }}>
+  /**
+   * Quiz Application Script
+   * Manages quiz state, UI updates, and user interactions
+   */
+
+  // ============================================
+  // State Management
+  // ============================================
+  
+  /** Current question index (0-based) */
   let currentQuestionIndex = 0;
+  
+  /** Number of correct answers */
   let score = 0;
+  
+  /** Number of questions attempted */
   let attempted = 0;
+  
+  /** Index of selected answer (null if not yet selected) */
   let selectedAnswer = null;
+  
+  /** Quiz questions data */
   const questions = quizData.questions;
 
-  function updateProgress() {
-    const progressFill = document.getElementById('progress-fill');
-    const currentQuestionEl = document.getElementById('current-question');
-    const scoreEl = document.getElementById('score');
-    const attemptedEl = document.getElementById('attempted');
+  // ============================================
+  // DOM Element References (cached for performance)
+  // ============================================
+  
+  let progressFill;
+  let currentQuestionEl;
+  let scoreEl;
+  let attemptedEl;
+  let questionText;
+  let choicesContainer;
+  let explanationContainer;
+  let explanationText;
+  let questionContainer;
+  let resultContainer;
+  let finalScoreEl;
+  let finalTotalEl;
+  let percentageEl;
+  let nextButton;
+  let retryButton;
 
+  /**
+   * Cache DOM element references for better performance
+   */
+  function cacheDOMElements() {
+    progressFill = document.getElementById('progress-fill');
+    currentQuestionEl = document.getElementById('current-question');
+    scoreEl = document.getElementById('score');
+    attemptedEl = document.getElementById('attempted');
+    questionText = document.getElementById('question-text');
+    choicesContainer = document.getElementById('choices-container');
+    explanationContainer = document.getElementById('explanation-container');
+    explanationText = document.getElementById('explanation-text');
+    questionContainer = document.getElementById('question-container');
+    resultContainer = document.getElementById('result-container');
+    finalScoreEl = document.getElementById('final-score');
+    finalTotalEl = document.getElementById('final-total');
+    percentageEl = document.getElementById('percentage');
+    nextButton = document.getElementById('next-button');
+    retryButton = document.getElementById('retry-button');
+  }
+
+  // ============================================
+  // UI Update Functions
+  // ============================================
+
+  /**
+   * Update progress bar and score display
+   */
+  function updateProgress() {
     if (progressFill && currentQuestionEl && scoreEl && attemptedEl) {
       const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
       progressFill.style.width = `${progress}%`;
@@ -80,31 +141,48 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     }
   }
 
+  /**
+   * Display current question and choices
+   */
   function displayQuestion() {
     const question = questions[currentQuestionIndex];
-    const questionText = document.getElementById('question-text');
-    const choicesContainer = document.getElementById('choices-container');
-    const explanationContainer = document.getElementById('explanation-container');
-
-    if (questionText && choicesContainer && explanationContainer) {
-      questionText.textContent = question.question;
-      choicesContainer.innerHTML = '';
-      explanationContainer.style.display = 'none';
-      selectedAnswer = null;
-
-      question.choices.forEach((choice, index) => {
-        const button = document.createElement('button');
-        button.className = 'choice-button';
-        button.textContent = choice;
-        button.onclick = () => selectAnswer(index);
-        choicesContainer.appendChild(button);
-      });
-
-      updateProgress();
+    
+    if (!questionText || !choicesContainer || !explanationContainer) {
+      console.error('Required DOM elements not found');
+      return;
     }
+
+    // Update question text
+    questionText.textContent = question.question;
+    
+    // Reset UI state
+    choicesContainer.innerHTML = '';
+    explanationContainer.style.display = 'none';
+    selectedAnswer = null;
+
+    // Create choice buttons
+    question.choices.forEach((choice, index) => {
+      const button = document.createElement('button');
+      button.className = 'choice-button';
+      button.textContent = choice;
+      button.setAttribute('aria-label', `選択肢 ${index + 1}: ${choice}`);
+      button.onclick = () => selectAnswer(index);
+      choicesContainer.appendChild(button);
+    });
+
+    updateProgress();
   }
 
+  // ============================================
+  // User Interaction Handlers
+  // ============================================
+
+  /**
+   * Handle answer selection
+   * @param {number} index - Index of selected answer
+   */
   function selectAnswer(index) {
+    // Prevent multiple selections
     if (selectedAnswer !== null) return;
 
     selectedAnswer = index;
@@ -112,30 +190,43 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
     const question = questions[currentQuestionIndex];
     const buttons = document.querySelectorAll('.choice-button');
-    const explanationContainer = document.getElementById('explanation-container');
-    const explanationText = document.getElementById('explanation-text');
 
+    // Update button states with visual feedback
     buttons.forEach((button, i) => {
       button.disabled = true;
       if (i === question.correctAnswer) {
         button.classList.add('correct');
+        button.setAttribute('aria-label', `正解: ${button.textContent}`);
       } else if (i === index) {
         button.classList.add('incorrect');
+        button.setAttribute('aria-label', `あなたの選択 (不正解): ${button.textContent}`);
       }
     });
 
+    // Update score if correct
     if (index === question.correctAnswer) {
       score++;
     }
 
+    // Show explanation
     if (explanationContainer && explanationText) {
       explanationText.textContent = question.explanation;
       explanationContainer.style.display = 'block';
+      
+      // Scroll to explanation on mobile
+      if (window.innerWidth <= 600) {
+        setTimeout(() => {
+          explanationContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 300);
+      }
     }
 
     updateProgress();
   }
 
+  /**
+   * Move to next question or show results
+   */
   function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -145,49 +236,68 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     }
   }
 
+  /**
+   * Display final quiz results
+   */
   function showResults() {
-    const questionContainer = document.getElementById('question-container');
-    const explanationContainer = document.getElementById('explanation-container');
-    const resultContainer = document.getElementById('result-container');
-    const finalScoreEl = document.getElementById('final-score');
-    const finalTotalEl = document.getElementById('final-total');
-    const percentageEl = document.getElementById('percentage');
+    if (!questionContainer || !explanationContainer || !resultContainer) {
+      console.error('Result display elements not found');
+      return;
+    }
 
-    if (questionContainer && explanationContainer && resultContainer && finalScoreEl && finalTotalEl && percentageEl) {
-      questionContainer.style.display = 'none';
-      explanationContainer.style.display = 'none';
-      resultContainer.style.display = 'block';
+    // Hide question and explanation
+    questionContainer.style.display = 'none';
+    explanationContainer.style.display = 'none';
+    
+    // Show results
+    resultContainer.style.display = 'block';
 
+    if (finalScoreEl && finalTotalEl && percentageEl) {
       finalScoreEl.textContent = score.toString();
       finalTotalEl.textContent = questions.length.toString();
       const percentage = Math.round((score / questions.length) * 100);
       percentageEl.textContent = percentage.toString();
     }
+
+    // Scroll to top on mobile
+    if (window.innerWidth <= 600) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
+  /**
+   * Reset quiz to initial state
+   */
   function retryQuiz() {
+    // Reset state
     currentQuestionIndex = 0;
     score = 0;
     attempted = 0;
     selectedAnswer = null;
 
-    const questionContainer = document.getElementById('question-container');
-    const resultContainer = document.getElementById('result-container');
-
+    // Update UI
     if (questionContainer && resultContainer) {
       questionContainer.style.display = 'block';
       resultContainer.style.display = 'none';
       displayQuestion();
     }
+
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // Initialize quiz
-  document.addEventListener('DOMContentLoaded', () => {
+  // ============================================
+  // Initialization
+  // ============================================
+
+  /**
+   * Initialize quiz application
+   */
+  function initializeQuiz() {
+    cacheDOMElements();
     displayQuestion();
 
-    const nextButton = document.getElementById('next-button');
-    const retryButton = document.getElementById('retry-button');
-
+    // Set up event listeners
     if (nextButton) {
       nextButton.addEventListener('click', nextQuestion);
     }
@@ -195,77 +305,136 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     if (retryButton) {
       retryButton.addEventListener('click', retryQuiz);
     }
-  });
+
+    // Keyboard navigation support
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && selectedAnswer !== null) {
+        if (explanationContainer && explanationContainer.style.display === 'block') {
+          nextQuestion();
+        }
+      }
+    });
+  }
+
+  // Wait for DOM to be ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeQuiz);
+  } else {
+    initializeQuiz();
+  }
 </script>
 
 <style>
+  /* CSS Variables for consistent theming */
+  :root {
+    --primary-color: #667eea;
+    --primary-dark: #764ba2;
+    --success-color: #28a745;
+    --success-bg: #d4edda;
+    --success-text: #155724;
+    --error-color: #dc3545;
+    --error-bg: #f8d7da;
+    --error-text: #721c24;
+    --border-color: #e0e0e0;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --text-tertiary: #555;
+    --bg-light: #f8f9fa;
+    --bg-hover: #f8f9ff;
+    --spacing-xs: 10px;
+    --spacing-sm: 15px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 40px;
+    --border-radius-sm: 6px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --transition-fast: 0.2s;
+    --transition-normal: 0.3s;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+
   .quiz-header {
-    margin-bottom: 30px;
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 20px;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: var(--spacing-md);
   }
 
   .description {
-    color: #666;
+    color: var(--text-secondary);
     font-size: 1.1rem;
   }
 
   .progress-container {
-    margin-bottom: 30px;
+    margin-bottom: var(--spacing-lg);
   }
 
   .progress-text {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-xs);
     font-weight: 600;
-    color: #667eea;
+    color: var(--primary-color);
+    font-size: 0.95rem;
   }
 
   .progress-bar {
     height: 10px;
-    background: #e0e0e0;
+    background: var(--border-color);
     border-radius: 5px;
     overflow: hidden;
   }
 
   .progress-fill {
     height: 100%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    transition: width 0.3s ease;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    transition: width var(--transition-normal) ease;
   }
 
   #question-container {
-    margin-bottom: 30px;
+    margin-bottom: var(--spacing-lg);
   }
 
   #question-text {
     font-size: 1.5rem;
     margin-bottom: 25px;
-    color: #333;
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.4;
   }
 
   .choices-container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: var(--spacing-sm);
   }
 
   .choice-button {
     background: white;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px 20px;
-    font-size: 1.1rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    padding: 18px 20px;
+    min-height: 56px;
+    font-size: 1.05rem;
     text-align: left;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all var(--transition-normal);
+    font-weight: 500;
+    line-height: 1.5;
+    position: relative;
+    box-shadow: var(--shadow-sm);
   }
 
   .choice-button:hover:not(:disabled) {
-    border-color: #667eea;
-    background: #f8f9ff;
+    border-color: var(--primary-color);
+    background: var(--bg-hover);
     transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .choice-button:active:not(:disabled) {
+    transform: translateX(3px) scale(0.98);
   }
 
   .choice-button:disabled {
@@ -273,134 +442,206 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   }
 
   .choice-button.correct {
-    background: #d4edda;
-    border-color: #28a745;
-    color: #155724;
+    background: var(--success-bg);
+    border-color: var(--success-color);
+    color: var(--success-text);
+    font-weight: 600;
   }
 
   .choice-button.incorrect {
-    background: #f8d7da;
-    border-color: #dc3545;
-    color: #721c24;
+    background: var(--error-bg);
+    border-color: var(--error-color);
+    color: var(--error-text);
+    font-weight: 600;
   }
 
   .explanation-container {
     background: #f0f7ff;
-    border-left: 4px solid #667eea;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    animation: slideIn var(--transition-normal) ease;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .explanation-container h3 {
-    color: #667eea;
-    margin-bottom: 10px;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
     font-size: 1.2rem;
   }
 
   .explanation-container p {
-    color: #555;
-    margin-bottom: 15px;
+    color: var(--text-tertiary);
+    margin-bottom: var(--spacing-sm);
     line-height: 1.8;
   }
 
   .next-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: white;
     border: none;
-    border-radius: 6px;
-    padding: 12px 30px;
+    border-radius: var(--border-radius-sm);
+    padding: 14px 32px;
+    min-height: 48px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-sm);
   }
 
   .next-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    box-shadow: var(--shadow-md);
+  }
+
+  .next-button:active {
+    transform: translateY(0);
   }
 
   .result-container {
     text-align: center;
-    padding: 30px;
+    padding: var(--spacing-lg);
+    animation: fadeIn 0.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .result-container h2 {
-    color: #667eea;
-    margin-bottom: 30px;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
     font-size: 2rem;
   }
 
   .result-score {
-    background: #f8f9fa;
-    border-radius: 12px;
-    padding: 30px;
-    margin-bottom: 30px;
+    background: var(--bg-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
   }
 
   .final-score {
     font-size: 2rem;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
   }
 
   .percentage {
     font-size: 1.5rem;
-    color: #667eea;
+    color: var(--primary-color);
     font-weight: 600;
   }
 
   .result-actions {
     display: flex;
-    gap: 20px;
+    gap: var(--spacing-md);
     justify-content: center;
     flex-wrap: wrap;
   }
 
   .retry-button,
   .home-button {
-    padding: 12px 30px;
-    border-radius: 6px;
+    padding: 14px 32px;
+    min-height: 48px;
+    border-radius: var(--border-radius-sm);
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all var(--transition-normal);
     border: none;
     text-decoration: none;
     display: inline-block;
+    box-shadow: var(--shadow-sm);
   }
 
   .retry-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: white;
   }
 
   .home-button {
     background: white;
-    color: #667eea;
-    border: 2px solid #667eea;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
   }
 
   .retry-button:hover,
   .home-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    box-shadow: var(--shadow-md);
   }
 
+  .retry-button:active,
+  .home-button:active {
+    transform: translateY(0);
+  }
+
+  /* Mobile optimizations - Enhanced touch targets */
   @media (max-width: 600px) {
     #question-text {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      margin-bottom: var(--spacing-md);
     }
 
     .choice-button {
       font-size: 1rem;
-      padding: 12px 15px;
+      padding: 20px 18px;
+      min-height: 64px; /* Increased for better mobile tap target */
+      gap: var(--spacing-md);
+    }
+
+    .choices-container {
+      gap: var(--spacing-md); /* More space between buttons on mobile */
+    }
+
+    .next-button,
+    .retry-button,
+    .home-button {
+      width: 100%;
+      max-width: 300px;
+      min-height: 52px;
+      padding: 16px 24px;
     }
 
     .result-actions {
       flex-direction: column;
+      align-items: center;
+    }
+
+    .progress-text {
+      font-size: 0.9rem;
+    }
+
+    .result-container {
+      padding: var(--spacing-md);
+    }
+  }
+
+  /* Tablet and larger phones */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .choice-button {
+      padding: 20px 22px;
+      min-height: 60px;
     }
   }
 </style>
