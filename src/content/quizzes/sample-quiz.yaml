@@ -1,0 +1,38 @@
+title: サンプルクイズ
+description: これはサンプルのクイズです。TypeScriptとAstroに関する問題です。
+questions:
+  - question: TypeScriptとは何ですか？
+    choices:
+      - Javaの新しいバージョン
+      - JavaScriptのスーパーセット
+      - Pythonのライブラリ
+      - C++のフレームワーク
+    correctAnswer: 1
+    explanation: TypeScriptはJavaScriptのスーパーセットで、静的型付けを追加したプログラミング言語です。
+
+  - question: Astroの特徴はどれですか？
+    choices:
+      - バックエンド専用フレームワーク
+      - ゲーム開発エンジン
+      - 静的サイトジェネレーター
+      - データベース管理システム
+    correctAnswer: 2
+    explanation: Astroは静的サイトジェネレーターで、高速なWebサイトを構築するためのフレームワークです。
+
+  - question: pnpmの特徴は？
+    choices:
+      - ディスク容量を節約する
+      - npmより遅い
+      - Pythonパッケージマネージャー
+      - データベースツール
+    correctAnswer: 0
+    explanation: pnpmはディスク容量を節約し、npmより高速なパッケージマネージャーです。
+
+  - question: GitHub Pagesで静的サイトをホスティングできますか？
+    choices:
+      - いいえ、できません
+      - はい、できます
+      - 有料プランのみ
+      - サーバーが必要
+    correctAnswer: 1
+    explanation: GitHub Pagesは無料で静的サイトをホスティングできるサービスです。
