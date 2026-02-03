@@ -9,6 +9,7 @@ questions:
       - 6個
     correctAnswer: 1
     explanation: チームトポロジーでは、ストリームアラインドチーム、イネイブリングチーム、コンプリケイテッドサブシステムチーム、プラットフォームチームの4つの基本的なチームタイプが定義されています。
+    referenceUrl: https://teamtopologies.com/
 
   - question: ストリームアラインドチームの主な役割は何ですか？
     choices:
@@ -18,6 +19,7 @@ questions:
       - 複雑なサブシステムの管理
     correctAnswer: 1
     explanation: ストリームアラインドチームは、ビジネス価値の継続的な提供を目的とし、顧客やユーザーに直接価値を届けるチームです。
+    referenceUrl: https://teamtopologies.com/key-concepts
 
   - question: イネイブリングチームの主な目的は何ですか？
     choices:
@@ -54,6 +56,7 @@ questions:
       - 5種類
     correctAnswer: 1
     explanation: チームトポロジーでは、コラボレーション、X-as-a-Service、ファシリテーティングの3種類のインタラクションモードが定義されています。
+    referenceUrl: https://teamtopologies.com/key-concepts
 
   - question: コラボレーションモードの特徴として正しいものはどれですか？
     choices:

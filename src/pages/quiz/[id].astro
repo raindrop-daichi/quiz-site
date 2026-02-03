@@ -40,7 +40,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <div id="explanation-container" class="explanation-container" style="display: none;" role="region" aria-label="解説">
         <h3>解説</h3>
         <p id="explanation-text"></p>
-        <button id="next-button" class="next-button" aria-label="次の問題へ進む">次の問題</button>
+        <p id="reference-link-container" class="reference-link" style="display: none;">
+          📚 参考情報: <a id="reference-link" href="" target="_blank" rel="noopener noreferrer"></a>
+        </p>
+        <button id="next-button" class="next-button">次の問題</button>
       </div>
 
       <div id="result-container" class="result-container" style="display: none;" role="region" aria-label="クイズの結果">
@@ -211,6 +214,24 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     // Show explanation
     if (explanationContainer && explanationText) {
       explanationText.textContent = question.explanation;
+      
+      // Handle reference URL if available
+      const referenceLinkContainer = document.getElementById('reference-link-container');
+      const referenceLink = document.getElementById('reference-link');
+      if (question.referenceUrl && referenceLinkContainer && referenceLink) {
+        referenceLink.href = question.referenceUrl;
+        // Extract domain name for better readability
+        try {
+          const url = new URL(question.referenceUrl);
+          referenceLink.textContent = url.hostname.replace('www.', '');
+        } catch {
+          referenceLink.textContent = question.referenceUrl;
+        }
+        referenceLinkContainer.style.display = 'block';
+      } else if (referenceLinkContainer) {
+        referenceLinkContainer.style.display = 'none';
+      }
+      
       explanationContainer.style.display = 'block';
       
       // Scroll to explanation on mobile
@@ -489,6 +510,25 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     color: var(--text-tertiary);
     margin-bottom: var(--spacing-sm);
     line-height: 1.8;
+  }
+
+  .reference-link {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #d0e0ff;
+    color: #667eea;
+    font-size: 0.95rem;
+  }
+
+  .reference-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    word-break: break-all;
+  }
+
+  .reference-link a:hover {
+    text-decoration: underline;
   }
 
   .next-button {

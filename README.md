@@ -62,6 +62,7 @@ questions:
       - 選択肢4
     correctAnswer: 1  # 0-3の範囲で正解のインデックス（0から開始）
     explanation: この問題の解説文です。
+    referenceUrl: https://example.com/reference  # 任意：情報源へのリンク
 
   - question: 次の問題文
     choices:
@@ -71,6 +72,7 @@ questions:
       - 選択肢D
     correctAnswer: 0
     explanation: 解説文
+    referenceUrl: https://example.com/another-reference
 ```
 
 ### スキーマ
@@ -84,6 +86,7 @@ Astroのコンテンツコレクション機能により、以下のスキーマ
   - `choices`: 文字列の配列、正確に4つの要素（必須）
   - `correctAnswer`: 0-3の数値（必須）
   - `explanation`: 文字列（必須）
+  - `referenceUrl`: 情報源へのURL（任意）- 正確な情報のソースを提供
 
 ## 🏗️ ビルド
 
