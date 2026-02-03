@@ -1,0 +1,22 @@
+{
+  "name": "quiz-site",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Astro製クイズサイト",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": ["quiz", "astro", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.28.2",
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "astro": "^5.17.1",
+    "typescript": "^5.9.3"
+  }
+}

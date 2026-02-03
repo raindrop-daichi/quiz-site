@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const quizzes = await getCollection('quizzes');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Layout title="クイズサイト">
+  <h1>🎯 クイズサイト</h1>
+  <p>Astroで構築された静的クイズサイトへようこそ！</p>
+  
+  <div class="quiz-list">
+    <h2>利用可能なクイズ</h2>
+    {quizzes.map((quiz) => (
+      <div class="quiz-card">
+        <h3>{quiz.data.title}</h3>
+        <p>{quiz.data.description}</p>
+        <p class="question-count">問題数: {quiz.data.questions.length}</p>
+        <a href={`${base}/quiz/${quiz.id}`} class="start-button">開始する</a>
+      </div>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .quiz-list {
+    margin-top: 30px;
+  }
+
+  .quiz-list h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #667eea;
+  }
+
+  .quiz-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #667eea;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .quiz-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  }
+
+  .quiz-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+  }
+
+  .quiz-card p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .question-count {
+    font-weight: 600;
+    color: #667eea;
+    font-size: 0.9rem;
+  }
+
+  .start-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .start-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    color: white;
+  }
+</style>
