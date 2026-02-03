@@ -9,6 +9,7 @@ questions:
       - 真田信之
     correctAnswer: 1
     explanation: 真田幸村の本名は真田信繁です。「幸村」という名は後世の軍記物などで広まった通称で、実際には信繁という名を使っていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%9C%9F%E7%94%B0%E4%BF%A1%E7%B9%81
 
   - question: 真田幸村の父親は誰ですか？
     choices:
@@ -36,6 +37,7 @@ questions:
       - 長篠の戦い
     correctAnswer: 1
     explanation: 真田幸村は大坂の陣（大坂冬の陣と大坂夏の陣）で徳川家康を追い詰めるほどの活躍をし、「日本一の兵」と称賛されました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%9D%82%E3%81%AE%E9%99%A3
 
   - question: 真田幸村が築いたとされる出城の名前は？
     choices:
@@ -45,6 +47,7 @@ questions:
       - 姫路城
     correctAnswer: 1
     explanation: 大坂冬の陣で真田幸村が築いた出城を「真田丸」といいます。この真田丸を拠点に徳川軍を大いに苦しめました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%9C%9F%E7%94%B0%E4%B8%B8
 
   - question: 真田幸村が仕えた豊臣家の当主は誰ですか？
     choices:

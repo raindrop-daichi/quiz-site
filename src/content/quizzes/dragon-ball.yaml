@@ -10,6 +10,7 @@ questions:
       - 願いは叶わない
     correctAnswer: 1
     explanation: ドラゴンボールを7つ集めると神龍が現れ、1つの願いを叶えてくれます。ナメック星の神龍は3つまで叶えられます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A9%E3%82%B4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%AB
 
   - question: 孫悟空の本名（サイヤ人名）は？
     choices:
@@ -19,6 +20,7 @@ questions:
       - ラディッツ
     correctAnswer: 2
     explanation: 孫悟空のサイヤ人名はカカロットです。下級戦士バーダックとギネの息子として生まれました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%AD%AB%E6%82%9F%E7%A9%BA
 
   - question: ベジータの故郷の惑星名は？
     choices:
@@ -35,8 +37,8 @@ questions:
       - 鶴仙人
       - 武泰斗
       - 桃白白
-    correctAnswer: 2
-    explanation: 亀仙人の本名は武泰斗（むたいと）です。武天老師とも呼ばれています。
+    correctAnswer: 0
+    explanation: 亀仙人の本名は武天老師（むてんろうし）です。武泰斗は亀仙人の師匠の名前です。
 
   - question: スーパーサイヤ人になったときの髪の色は？
     choices:
