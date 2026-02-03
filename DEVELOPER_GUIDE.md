@@ -179,12 +179,12 @@ pnpm add -D prettier prettier-plugin-astro
 3. **Lazy Loading**: Consider lazy-loading quiz data for large quizzes
 4. **Caching**: Implement service worker for offline support
 
-## Mobile UX Best Practices
+### Mobile UX Best Practices
 
 ### Touch Target Guidelines
-- Minimum: 44x44px (WCAG AAA)
+- Minimum: 44x44px (WCAG 2.5.5 Level AAA - Target Size)
 - Recommended: 48x48px (Material Design)
-- Our implementation: 64px on mobile for better UX
+- Our implementation: 64px on mobile for enhanced UX
 
 ### Spacing
 - More generous spacing on mobile (20px between buttons)

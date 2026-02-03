@@ -37,11 +37,12 @@ export class QuizManager {
 
   /**
    * Select an answer and update score
-   * @returns true if answer is correct, false otherwise
+   * @param answerIndex - Index of the selected answer
+   * @returns Object with isCorrect boolean and alreadyAnswered flag
    */
-  selectAnswer(answerIndex: number): boolean {
+  selectAnswer(answerIndex: number): { isCorrect: boolean; alreadyAnswered: boolean } {
     if (this.state.selectedAnswer !== null) {
-      return false; // Already answered
+      return { isCorrect: false, alreadyAnswered: true };
     }
 
     this.state.selectedAnswer = answerIndex;
@@ -49,7 +50,7 @@ export class QuizManager {
 
     const currentQuestion = this.getCurrentQuestion();
     if (!currentQuestion) {
-      return false; // Safety check
+      throw new Error('Invalid quiz state: no current question available');
     }
     
     const isCorrect = answerIndex === currentQuestion.correctAnswer;
@@ -58,7 +59,7 @@ export class QuizManager {
       this.state.score++;
     }
 
-    return isCorrect;
+    return { isCorrect, alreadyAnswered: false };
   }
 
   /**
