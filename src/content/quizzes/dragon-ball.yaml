@@ -37,8 +37,8 @@ questions:
       - 鶴仙人
       - 武泰斗
       - 桃白白
-    correctAnswer: 2
-    explanation: 亀仙人の本名は武泰斗（むたいと）です。武天老師とも呼ばれています。
+    correctAnswer: 0
+    explanation: 亀仙人の本名は武天老師（むてんろうし）です。武泰斗は亀仙人の師匠の名前です。
 
   - question: スーパーサイヤ人になったときの髪の色は？
     choices:
