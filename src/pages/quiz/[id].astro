@@ -632,6 +632,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     gap: var(--spacing-md);
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .retry-button,
@@ -645,7 +647,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     transition: all var(--transition-normal);
     border: none;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: var(--shadow-sm);
   }
 
@@ -705,6 +709,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       max-width: 300px;
       min-height: 52px;
       padding: 16px 24px;
+      box-sizing: border-box;
     }
 
     .result-actions {
