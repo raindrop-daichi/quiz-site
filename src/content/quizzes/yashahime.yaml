@@ -1,0 +1,356 @@
+title: 半妖の夜叉姫 完全マスタークイズ
+description: 易しい問題から超難問まで！半妖の夜叉姫の世界を徹底的にチェック！全35問で幅広い難易度のクイズに挑戦しよう！
+questions:
+  # 易しい問題（問1-12）- 基本的なキャラクターと物語の設定
+  - question: 主人公・とわの双子の妹の名前は？
+    choices:
+      - もろは
+      - せつな
+      - りん
+      - かごめ
+    correctAnswer: 1
+    explanation: とわの双子の妹はせつなです。二人は幼い頃に離れ離れになりました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: もろはは誰と誰の娘？
+    choices:
+      - 犬夜叉とかごめ
+      - 殺生丸とりん
+      - 弥勒と珊瑚
+      - 鋼牙と菖蒲
+    correctAnswer: 0
+    explanation: もろは（諸葉）は犬夜叉とかごめの娘で、1/4妖怪（クォーター）です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: とわとせつなは誰の娘？
+    choices:
+      - 犬夜叉とかごめ
+      - 殺生丸とりん
+      - 弥勒と珊瑚
+      - 琥珀と楓
+    correctAnswer: 1
+    explanation: とわとせつなは殺生丸とりんの双子の娘です。半妖の姫として生まれました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: とわが現代で育った場所は？
+    choices:
+      - 大阪
+      - 京都
+      - 東京
+      - 名古屋
+    correctAnswer: 2
+    explanation: とわは戦国時代から現代の東京にタイムスリップし、日暮草太の家族に育てられました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: せつなが所属している組織は？
+    choices:
+      - 妖怪退治屋
+      - 妖怪討伐隊
+      - 鬼殺隊
+      - 夢の胡蝶
+    correctAnswer: 0
+    explanation: せつなは妖怪退治屋に所属し、妖怪を退治する仕事をしています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: せつなが失ってしまったものは？
+    choices:
+      - 記憶
+      - 妖力
+      - 睡眠
+      - 声
+    correctAnswer: 2
+    explanation: せつなは夢の胡蝶に睡眠を奪われ、眠ることができなくなりました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: もろはが使う武器は？
+    choices:
+      - 刀
+      - 弓矢
+      - 槍
+      - 鎖鎌
+    correctAnswer: 1
+    explanation: もろはは母・かごめから受け継いだ弓矢を使います。霊力も使えます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 物語の主要な敵である麒麟丸は何を狙っている？
+    choices:
+      - 四魂の玉
+      - 虹色真珠
+      - 鉄砕牙
+      - 天生牙
+    correctAnswer: 1
+    explanation: 麒麟丸は七虹珠（虹色真珠）を集めて、強大な力を手に入れようとしています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: とわの武器である妖刀の名前は？
+    choices:
+      - 鉄砕牙
+      - 天生牙
+      - 菊十文字
+      - 叢雲牙
+    correctAnswer: 2
+    explanation: とわは菊十文字という妖刀を使います。父・殺生丸から与えられたものです。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: せつなが使う武器は？
+    choices:
+      - 薙刀
+      - 双刀
+      - 短刀
+      - 長刀
+    correctAnswer: 0
+    explanation: せつなは薙刀を武器として使い、妖怪退治を行います。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 三人の姫たちが集める虹色真珠は全部でいくつ？
+    choices:
+      - 5つ
+      - 7つ
+      - 9つ
+      - 12つ
+    correctAnswer: 1
+    explanation: 虹色真珠（七虹珠）は全部で7つあり、それぞれに異なる力が宿っています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: もろはが「べにこ」として働いていた場所は？
+    choices:
+      - 料亭
+      - 寺
+      - 妖怪退治屋
+      - 山賊の巣窟
+    correctAnswer: 2
+    explanation: もろはは「べにこ」という偽名で妖怪退治屋に借金を返すために働いていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  # 中級問題（問13-24）- より詳しいストーリーやキャラクター設定
+  - question: とわとせつなが生まれた直後に何が起きた？
+    choices:
+      - 大火事
+      - 大地震
+      - 森の大火
+      - 妖怪の襲撃
+    correctAnswer: 2
+    explanation: とわとせつなが生まれた夜、森が大火に包まれ、二人は離れ離れになりました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 夢の胡蝶の真の正体は？
+    choices:
+      - 麒麟丸の妻
+      - りんの妹
+      - 零の式神
+      - 桔梗の生まれ変わり
+    correctAnswer: 2
+    explanation: 夢の胡蝶は零が作り出した式神で、せつなの睡眠を奪う存在です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 零はせつなに何をした？
+    choices:
+      - 記憶を消した
+      - 睡眠を奪った
+      - 妖力を封じた
+      - 感情を消した
+    correctAnswer: 1
+    explanation: 零は夢の胡蝶を使ってせつなの睡眠と幼少期の記憶を奪いました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: もろはが持つ特殊な能力「紅龍の波」は何を使う技？
+    choices:
+      - 妖力
+      - 霊力
+      - 妖力と霊力の両方
+      - 神力
+    correctAnswer: 2
+    explanation: もろはは妖怪と人間の血を引くため、妖力と霊力の両方を使うことができます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 殺生丸がとわとせつなを時代樹に預けた理由は？
+    choices:
+      - 育てられないから
+      - 麒麟丸から守るため
+      - 零から守るため
+      - 修行させるため
+    correctAnswer: 2
+    explanation: 殺生丸は娘たちを零の呪いから守るために、時代樹に預けて時を超えさせました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: せつなの薙刀に込められた特殊な力は？
+    choices:
+      - 氷の力
+      - 風の力
+      - 雷の力
+      - 月の力
+    correctAnswer: 1
+    explanation: せつなの薙刀「双波」は風の力を操ることができます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: りくは何者？
+    choices:
+      - 珊瑚の娘
+      - 楓の孫
+      - 琥珀の娘
+      - 妖怪退治屋の頭領
+    correctAnswer: 2
+    explanation: りくは琥珀の娘で、妖怪退治屋を率いています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 玖々丸は誰の子孫？
+    choices:
+      - 鋼牙
+      - 七宝
+      - 邪見
+      - 弥勒
+    correctAnswer: 0
+    explanation: 玖々丸は狼妖怪・鋼牙の子孫で、もろはに好意を抱いています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: とわが現代で通っていた学校は？
+    choices:
+      - 中学校
+      - 高校
+      - 大学
+      - 専門学校
+    correctAnswer: 1
+    explanation: とわは現代の東京で高校生として生活していました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 翡翠と竹千代は何者？
+    choices:
+      - 妖怪退治屋
+      - 山賊
+      - 海賊
+      - 商人
+    correctAnswer: 1
+    explanation: 翡翠と竹千代は山賊として活動していましたが、後に三人の姫たちの仲間になります。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: もろはが使う「散魂鉄爪」は誰の技？
+    choices:
+      - 犬夜叉
+      - 殺生丸
+      - かごめ
+      - 闘牙王
+    correctAnswer: 0
+    explanation: 散魂鉄爪は父・犬夜叉の技で、もろはも同じ技を使うことができます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: とわの菊十文字に隠された秘密は？
+    choices:
+      - 天生牙の力が宿っている
+      - 時を操る力がある
+      - 空間を切り裂く力がある
+      - 妖力を吸収する
+    correctAnswer: 2
+    explanation: 菊十文字は空間を切り裂く力を持っており、時空を超えることもできます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  # 上級問題（問25-32）- 詳細な設定や複雑な関係性
+  - question: 麒麟丸と殺生丸の関係は？
+    choices:
+      - 師弟
+      - 父子
+      - 兄弟
+      - 従兄弟
+    correctAnswer: 2
+    explanation: 麒麟丸は闘牙王の兄で、殺生丸の伯父にあたります。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 零が麒麟丸に対して抱いている感情は？
+    choices:
+      - 愛情
+      - 憎悪
+      - 忠誠
+      - 恐怖
+    correctAnswer: 1
+    explanation: 零は麒麟丸への憎悪を抱いており、復讐を企てています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: せつなが新月の夜にどうなる？
+    choices:
+      - 完全な人間になる
+      - 完全な妖怪になる
+      - 力が倍増する
+      - 何も変わらない
+    correctAnswer: 0
+    explanation: 半妖のせつなは新月の夜に完全な人間の姿になり、妖力を失います。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: りんが長い間眠っていた理由は？
+    choices:
+      - 零の呪い
+      - 麒麟丸の術
+      - 病気
+      - 自らの意志
+    correctAnswer: 0
+    explanation: りんは零の呪いによって長い眠りについていました。娘たちの命と引き換えに。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: もろはが新月の夜にどうなる？
+    choices:
+      - 人間になる
+      - 完全な妖怪になる
+      - 何も変わらない
+      - 眠ってしまう
+    correctAnswer: 2
+    explanation: もろはは1/4妖怪（クォーター）なので、新月の夜でも姿は変わりません。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 時代樹の賢者は誰？
+    choices:
+      - 冥加
+      - 楓
+      - 刀々斎
+      - 白心上人
+    correctAnswer: 0
+    explanation: 冥加は時代樹の賢者で、とわとせつなの運命に関わる重要な存在です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 是露が持つ虹色真珠の色は？
+    choices:
+      - 赤
+      - 青
+      - 緑
+      - 金
+    correctAnswer: 3
+    explanation: 是露は金色の虹色真珠を持っており、特殊な力を使うことができます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: せつなの血の刃の能力は？
+    choices:
+      - 妖怪を石化させる
+      - 妖力を封じる
+      - 妖力を吸収する
+      - 傷を癒やす
+    correctAnswer: 1
+    explanation: せつなの血の刃は妖怪の妖力を封じる力を持っています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  # 超上級問題（問33-35）- 極めて詳細な知識が必要
+  - question: 麒麟丸が求める「完璧な時代」とは？
+    choices:
+      - 妖怪が支配する世界
+      - 人間がいない世界
+      - 死が存在しない世界
+      - 戦いのない世界
+    correctAnswer: 2
+    explanation: 麒麟丸は死を否定し、死が存在しない完璧な時代を作ろうとしていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: 零の本当の目的は？
+    choices:
+      - 麒麟丸を倒すこと
+      - 半妖を全て消すこと
+      - 自分の存在を消すこと
+      - 世界を支配すること
+    correctAnswer: 1
+    explanation: 零は自分を生んだ半妖を憎み、全ての半妖を消し去ろうとしていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
+
+  - question: とわの菊十文字と殺生丸の天生牙の共通点は？
+    choices:
+      - 両方とも人を殺せない
+      - 両方とも空間を切れる
+      - 両方とも死者を蘇らせる
+      - 両方とも闘牙王が作った
+    correctAnswer: 0
+    explanation: 菊十文字も天生牙も人を直接殺すことができない刀です。しかし強大な力を秘めています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E5%8D%8A%E5%A6%96%E3%81%AE%E5%A4%9C%E5%8F%89%E5%A7%AB
