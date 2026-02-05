@@ -37,6 +37,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
       <div id="question-container" role="main" aria-live="polite">
         <h2 id="question-text"></h2>
+        <div id="question-image-container" class="question-image-container" style="display: none;">
+          <img id="question-image" src="" alt="" class="question-image" />
+        </div>
         <div id="choices-container" class="choices-container" role="group" aria-label="選択肢"></div>
       </div>
 
@@ -98,6 +101,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   let scoreEl;
   let attemptedEl;
   let questionText;
+  let questionImageContainer;
+  let questionImage;
   let choicesContainer;
   let explanationContainer;
   let explanationText;
@@ -118,6 +123,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     scoreEl = document.getElementById('score');
     attemptedEl = document.getElementById('attempted');
     questionText = document.getElementById('question-text');
+    questionImageContainer = document.getElementById('question-image-container');
+    questionImage = document.getElementById('question-image');
     choicesContainer = document.getElementById('choices-container');
     explanationContainer = document.getElementById('explanation-container');
     explanationText = document.getElementById('explanation-text');
@@ -160,6 +167,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
     // Update question text
     questionText.textContent = question.question;
+    
+    // Update question image if present
+    if (question.image && questionImageContainer && questionImage) {
+      const altText = question.question.length > 100 
+        ? question.question.substring(0, 100) + '...' 
+        : question.question;
+      questionImage.src = question.image;
+      questionImage.alt = altText;
+      questionImageContainer.style.display = 'block';
+    } else if (questionImageContainer) {
+      questionImageContainer.style.display = 'none';
+    }
     
     // Reset UI state
     choicesContainer.innerHTML = '';
@@ -458,6 +477,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     color: var(--text-primary);
     font-weight: 600;
     line-height: 1.4;
+  }
+
+  .question-image-container {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .question-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    max-height: 400px;
+    object-fit: contain;
   }
 
   .choices-container {

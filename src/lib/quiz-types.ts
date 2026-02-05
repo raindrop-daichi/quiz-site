@@ -7,6 +7,7 @@
  */
 export interface QuizQuestion {
   question: string;
+  image?: string;
   choices: string[];
   correctAnswer: number;
   explanation: string;
