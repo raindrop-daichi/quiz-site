@@ -55,6 +55,7 @@ title: クイズのタイトル
 description: クイズの説明文
 questions:
   - question: 問題文は何ですか？
+    image: /quiz-site/images/quizzes/my-image.png  # 任意：問題に関連する画像
     choices:
       - 選択肢1
       - 選択肢2
@@ -83,10 +84,29 @@ Astroのコンテンツコレクション機能により、以下のスキーマ
 - `description`: 文字列（必須）
 - `questions`: 配列（必須）
   - `question`: 文字列（必須）
+  - `image`: 画像のパス（任意）- 問題に関連する画像を表示
   - `choices`: 文字列の配列、正確に4つの要素（必須）
   - `correctAnswer`: 0-3の数値（必須）
   - `explanation`: 文字列（必須）
   - `referenceUrl`: 情報源へのURL（任意）- 正確な情報のソースを提供
+
+### 画像の追加方法
+
+問題に画像を追加する場合：
+
+1. 画像ファイルを `public/images/quizzes/` ディレクトリに配置
+2. YAMLファイルで `image` フィールドを使用してパスを指定
+
+```yaml
+questions:
+  - question: この画像は何を表していますか？
+    image: /quiz-site/images/quizzes/sample-image.svg
+    choices:
+      - 選択肢1
+      - 選択肢2
+```
+
+**注意**: ベースパスが `/quiz-site` に設定されているため、画像パスには `/quiz-site/images/...` と指定してください。
 
 ## 🏗️ ビルド
 
