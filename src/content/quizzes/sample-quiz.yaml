@@ -2,6 +2,7 @@ title: サンプルクイズ
 description: これはサンプルのクイズです。TypeScriptとAstroに関する問題です。
 questions:
   - question: TypeScriptとは何ですか？
+    image: /quiz-site/images/quizzes/sample-image.svg
     choices:
       - Javaの新しいバージョン
       - JavaScriptのスーパーセット
