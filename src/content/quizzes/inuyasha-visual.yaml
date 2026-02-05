@@ -1,0 +1,286 @@
+title: 犬夜叉 ビジュアルクイズ - シンボルと重要アイテム編
+description: 犬夜叉の世界の重要なシンボルやアイテムを視覚的に学ぼう！24問の画像問題で理解を深めよう！
+questions:
+  # 四魂の玉に関する問題
+  - question: この画像が示しているのは物語の中心となる何というアイテム？
+    image: /quiz-site/images/quizzes/inuyasha/shikon-jewel.svg
+    choices:
+      - 四魂の玉
+      - 黒真珠
+      - 命の珠
+      - 冥石
+    correctAnswer: 0
+    explanation: 四魂の玉は物語の中心となる宝珠で、強大な力を秘めています。巫女みどり子が自分の魂と妖怪を封じ込めて作られました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 四魂の玉は4つの魂から構成されています。この中で最も穢れやすいとされる魂はどれ？
+    image: /quiz-site/images/quizzes/inuyasha/shikon-jewel.svg
+    choices:
+      - 荒魂（勇気）
+      - 和魂（親愛）
+      - 幸魂（愛情）
+      - 奇魂（知恵）
+    correctAnswer: 2
+    explanation: 幸魂（愛情の魂）が最も穢れやすく、これが四魂の玉を巡る争いの原因となりました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 四魂の玉が砕け散った後、かごめたちはどのような行動を取った？
+    image: /quiz-site/images/quizzes/inuyasha/shikon-jewel.svg
+    choices:
+      - 諦めて元の時代に戻った
+      - 欠片を集める旅に出た
+      - 新しい玉を作ろうとした
+      - 奈落に全て任せた
+    correctAnswer: 1
+    explanation: かごめが誤って四魂の玉を砕いてしまった後、犬夜叉たちは散らばった欠片を集める旅に出ました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  # 鉄砕牙に関する問題
+  - question: この画像が示す刀の名前は？
+    image: /quiz-site/images/quizzes/inuyasha/sword-tessaiga.svg
+    choices:
+      - 天生牙
+      - 鉄砕牙
+      - 叢雲牙
+      - 闘鬼神
+    correctAnswer: 1
+    explanation: 鉄砕牙は犬夜叉が父から受け継いだ妖刀で、100体の妖怪を一振りで倒せる力を持ちます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  - question: 鉄砕牙は普段どのような状態で存在している？
+    image: /quiz-site/images/quizzes/inuyasha/sword-tessaiga.svg
+    choices:
+      - 常に巨大な妖刀の姿
+      - 錆びた古びた刀
+      - 透明で見えない
+      - 封印されて存在しない
+    correctAnswer: 1
+    explanation: 鉄砕牙は普段は錆びた古びた刀の姿をしており、妖力を持つ者が握ると本来の巨大な姿に変化します。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  - question: 鉄砕牙を作った刀鍛冶の名前は？
+    image: /quiz-site/images/quizzes/inuyasha/sword-tessaiga.svg
+    choices:
+      - 刀々斎
+      - 宝仙鬼
+      - 灰刃坊
+      - 鍛冶師長
+    correctAnswer: 0
+    explanation: 刀々斎は犬の大将の依頼で鉄砕牙と天生牙を作った妖怪の刀鍛冶です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  # 新月に関する問題
+  - question: この画像が示す月の形の夜、犬夜叉にはどんな変化が起こる？
+    image: /quiz-site/images/quizzes/inuyasha/crescent-moon.svg
+    choices:
+      - 力が倍増する
+      - 完全な妖怪になる
+      - 人間の姿になる
+      - 何も変化しない
+    correctAnswer: 2
+    explanation: 新月の夜、半妖の犬夜叉は妖力を失い完全な人間の姿になります。これは半妖の宿命です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  - question: 新月の夜に人間化した犬夜叉の髪と目の色は？
+    image: /quiz-site/images/quizzes/inuyasha/crescent-moon.svg
+    choices:
+      - 白髪・金色の目
+      - 黒髪・茶色の目
+      - 銀髪・紫色の目
+      - 赤髪・緑色の目
+    correctAnswer: 1
+    explanation: 人間化した犬夜叉は黒い髪と茶色の目になり、妖怪の特徴である犬耳も消えます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  - question: 新月の夜、犬夜叉が最も気をつけなければならないことは？
+    image: /quiz-site/images/quizzes/inuyasha/crescent-moon.svg
+    choices:
+      - 眠らないこと
+      - 敵に見つからないこと
+      - 食事を取ること
+      - 鉄砕牙を手放さないこと
+    correctAnswer: 1
+    explanation: 妖力を失う新月の夜は犬夜叉が最も弱い時なので、敵に見つからないよう隠れる必要があります。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  # 骨喰いの井戸に関する問題
+  - question: この画像が示す場所は、かごめが戦国時代へタイムスリップするための何？
+    image: /quiz-site/images/quizzes/inuyasha/bone-eater-well.svg
+    choices:
+      - 骨喰いの井戸
+      - 時空の門
+      - 神社の社
+      - 封印の洞窟
+    correctAnswer: 0
+    explanation: 骨喰いの井戸は日暮神社にある古い井戸で、かごめと犬夜叉が現代と戦国時代を行き来する通路になっています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81
+
+  - question: 骨喰いの井戸を通って時代を超えられるのは主に誰？
+    image: /quiz-site/images/quizzes/inuyasha/bone-eater-well.svg
+    choices:
+      - 誰でも通れる
+      - かごめと犬夜叉
+      - 妖怪だけ
+      - 巫女だけ
+    correctAnswer: 1
+    explanation: 基本的にかごめと犬夜叉だけが骨喰いの井戸を通って時代を行き来できます。四魂の玉との関係が重要です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81
+
+  - question: 骨喰いの井戸という名前の由来は？
+    image: /quiz-site/images/quizzes/inuyasha/bone-eater-well.svg
+    choices:
+      - 妖怪の骨を捨てる場所だったから
+      - 骨が消える不思議な井戸だから
+      - 骨を食べる妖怪が住んでいたから
+      - 古い骨が積まれていたから
+    correctAnswer: 0
+    explanation: 戦国時代、退治した妖怪の骨を捨てる場所として使われていたため「骨喰いの井戸」と呼ばれました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  # 風穴に関する問題
+  - question: この画像が示す風の力は、弥勒の右手にある何という呪い？
+    image: /quiz-site/images/quizzes/inuyasha/wind-vortex.svg
+    choices:
+      - 風穴
+      - 風の傷
+      - 竜巻の術
+      - 風神の力
+    correctAnswer: 0
+    explanation: 風穴は弥勒の右手にある呪いで、あらゆるものを吸い込む強力な能力ですが、いずれ本人も吸い込んでしまう恐ろしい呪いです。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  - question: 弥勒の風穴の呪いをかけたのは誰？
+    image: /quiz-site/images/quizzes/inuyasha/wind-vortex.svg
+    choices:
+      - 奈落
+      - 殺生丸
+      - 神楽
+      - 鬼蜘蛛
+    correctAnswer: 0
+    explanation: 風穴の呪いは奈落が弥勒の祖父にかけたもので、子孫に代々受け継がれる恐ろしい呪いです。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  # 時代樹に関する問題
+  - question: この画像が示す御神木は、犬夜叉が何年間封印されていた場所？
+    image: /quiz-site/images/quizzes/inuyasha/sacred-tree.svg
+    choices:
+      - 10年間
+      - 30年間
+      - 50年間
+      - 100年間
+    correctAnswer: 2
+    explanation: 犬夜叉は桔梗の矢により御神木（時代樹）に50年間封印されていました。かごめによって封印が解かれます。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 犬夜叉を封印したのは誰の矢？
+    image: /quiz-site/images/quizzes/inuyasha/sacred-tree.svg
+    choices:
+      - かごめ
+      - 桔梗
+      - 楓
+      - 神楽
+    correctAnswer: 1
+    explanation: 桔梗が放った破魔の矢によって犬夜叉は御神木に封印されました。これは奈落の罠により引き起こされた悲劇でした。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  # 弓矢に関する問題
+  - question: この画像が示す弓矢は、巫女たちが使う何という武器？
+    image: /quiz-site/images/quizzes/inuyasha/sacred-bow-arrow.svg
+    choices:
+      - 破魔矢（はまや）
+      - 聖矢（せいや）
+      - 浄化の矢
+      - 天の矢
+    correctAnswer: 0
+    explanation: 破魔矢は巫女が使う聖なる矢で、妖怪を浄化する力を持っています。桔梗とかごめの主要な武器です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  - question: かごめが破魔の矢を放つとき、どのような特徴がある？
+    image: /quiz-site/images/quizzes/inuyasha/sacred-bow-arrow.svg
+    choices:
+      - 必ず命中する
+      - 強い霊力で光る
+      - 分裂して増える
+      - 敵を凍らせる
+    correctAnswer: 1
+    explanation: かごめの破魔の矢は強い霊力を持ち、ピンク色に光りながら飛んでいきます。桔梗の矢も同様に霊力で光ります。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81
+
+  - question: 物語の序盤、かごめの弓矢の腕前はどうだった？
+    image: /quiz-site/images/quizzes/inuyasha/sacred-bow-arrow.svg
+    choices:
+      - 最初から百発百中だった
+      - 全く当たらなかった
+      - 徐々に上達していった
+      - 時々奇跡的に当たる
+    correctAnswer: 3
+    explanation: かごめは弓道の経験がありましたが、最初は狙いが定まらず、窮地の時に霊力が覚醒して当たるという状態でした。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81
+
+  # 結界に関する問題
+  - question: この画像が示す結界は、主に何から守るために張られる？
+    image: /quiz-site/images/quizzes/inuyasha/barrier.svg
+    choices:
+      - 妖怪の侵入
+      - 自然災害
+      - 病気
+      - 盗賊
+    correctAnswer: 0
+    explanation: 結界は妖怪や邪悪な存在の侵入を防ぐために、霊力を持つ者が張る防御壁です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 奈落の分身で結界を張る能力を持っていたのは誰？
+    image: /quiz-site/images/quizzes/inuyasha/barrier.svg
+    choices:
+      - 神楽
+      - 神無
+      - 影郎丸
+      - 悟心鬼
+    correctAnswer: 1
+    explanation: 神無は奈落が最初に生み出した分身で、強力な結界を張る能力を持っていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  - question: 犬夜叉の鉄砕牙で結界を破る技の名前は？
+    image: /quiz-site/images/quizzes/inuyasha/barrier.svg
+    choices:
+      - 風の傷
+      - 金剛槍破
+      - 爆流破
+      - 結界破り
+    correctAnswer: 1
+    explanation: 金剛槍破は敵の妖気を跳ね返す技で、結界を破ることもできる強力な技です。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  # 神鏡に関する問題
+  - question: この鏡のような神器は、物語に登場する何という宝物？
+    image: /quiz-site/images/quizzes/inuyasha/sacred-mirror.svg
+    choices:
+      - 真実の鏡
+      - 神鏡
+      - 八咫鏡
+      - 魔除けの鏡
+    correctAnswer: 1
+    explanation: 神鏡は様々な力を持つ神器として作品に登場し、真実を映し出したり特別な力を発揮します。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89
+
+  - question: 殺生丸の母が使った神器の一つは鏡でした。その鏡の能力は？
+    image: /quiz-site/images/quizzes/inuyasha/sacred-mirror.svg
+    choices:
+      - 過去を見せる
+      - 冥界への扉を開く
+      - 敵を封印する
+      - 未来を予知する
+    correctAnswer: 1
+    explanation: 殺生丸の母が持つ冥道石という鏡は、冥界と現世を繋ぐ力を持っていました。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%A4%9C%E5%8F%89%E3%81%AE%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9
+
+  - question: かごめの持つ霊力の特徴として、何を見抜く力がある？
+    image: /quiz-site/images/quizzes/inuyasha/sacred-mirror.svg
+    choices:
+      - 四魂の玉の欠片の位置
+      - 妖怪の弱点
+      - 人の心
+      - 未来の出来事
+    correctAnswer: 0
+    explanation: かごめは桔梗の生まれ変わりとして、四魂の玉の欠片がある場所を感知できる特殊な能力を持っています。
+    referenceUrl: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9A%AE%E3%81%8B%E3%81%94%E3%82%81

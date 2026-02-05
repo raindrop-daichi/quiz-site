@@ -1,0 +1,37 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="barrierGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.8" />
+      <stop offset="60%" style="stop-color:#fde047;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#facc15;stop-opacity:0.1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Outer barrier shell -->
+  <circle cx="100" cy="100" r="90" fill="url(#barrierGlow)" opacity="0.6"/>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#fde047" stroke-width="3" opacity="0.7" stroke-dasharray="10,5"/>
+  
+  <!-- Middle layer -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.6" stroke-dasharray="8,4"/>
+  
+  <!-- Inner layer -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.5" stroke-dasharray="6,3"/>
+  
+  <!-- Sacred geometric pattern -->
+  <g opacity="0.4">
+    <line x1="100" y1="10" x2="100" y2="190" stroke="#eab308" stroke-width="1.5"/>
+    <line x1="10" y1="100" x2="190" y2="100" stroke="#eab308" stroke-width="1.5"/>
+    <line x1="30" y1="30" x2="170" y2="170" stroke="#eab308" stroke-width="1.5"/>
+    <line x1="170" y1="30" x2="30" y2="170" stroke="#eab308" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Energy nodes at intersections -->
+  <circle cx="100" cy="100" r="6" fill="#fef08a" opacity="0.8"/>
+  <circle cx="100" cy="35" r="4" fill="#fef08a" opacity="0.7"/>
+  <circle cx="100" cy="165" r="4" fill="#fef08a" opacity="0.7"/>
+  <circle cx="35" cy="100" r="4" fill="#fef08a" opacity="0.7"/>
+  <circle cx="165" cy="100" r="4" fill="#fef08a" opacity="0.7"/>
+  
+  <!-- Ripple effect -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#fde68a" stroke-width="1" opacity="0.3"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#92400e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#b45309;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#92400e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Bow body (yumi) -->
+  <path d="M 100 30 Q 70 80, 75 150 Q 77 220, 100 270" 
+        fill="none" stroke="url(#bowGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 100 30 Q 130 80, 125 150 Q 123 220, 100 270" 
+        fill="none" stroke="url(#bowGrad)" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Bow string -->
+  <line x1="100" y1="35" x2="100" y2="265" stroke="#e7e5e4" stroke-width="2"/>
+  
+  <!-- Decorative wrapping on grip -->
+  <rect x="95" y="140" width="10" height="40" fill="#7c2d12" rx="2"/>
+  <line x1="95" y1="150" x2="105" y2="150" stroke="#fbbf24" stroke-width="1"/>
+  <line x1="95" y1="160" x2="105" y2="160" stroke="#fbbf24" stroke-width="1"/>
+  <line x1="95" y1="170" x2="105" y2="170" stroke="#fbbf24" stroke-width="1"/>
+  
+  <!-- Sacred arrow -->
+  <g transform="translate(140, 100) rotate(45 0 0)">
+    <!-- Arrow shaft -->
+    <line x1="0" y1="0" x2="80" y2="0" stroke="#b45309" stroke-width="4"/>
+    
+    <!-- Arrow head -->
+    <polygon points="80,0 70,-6 70,6" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    
+    <!-- Fletching -->
+    <polygon points="0,0 -12,-8 -8,0" fill="#ef4444" opacity="0.8"/>
+    <polygon points="0,0 -12,8 -8,0" fill="#dc2626" opacity="0.8"/>
+    
+    <!-- Sacred glow -->
+    <circle cx="75" cy="0" r="12" fill="#fef3c7" opacity="0.3"/>
+  </g>
+</svg>

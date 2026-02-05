@@ -1,0 +1,36 @@
+<svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ancient well structure -->
+  <defs>
+    <pattern id="stoneTexture" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#78716c"/>
+      <circle cx="5" cy="5" r="1" fill="#57534e" opacity="0.5"/>
+      <circle cx="15" cy="12" r="1" fill="#57534e" opacity="0.5"/>
+    </pattern>
+  </defs>
+  
+  <!-- Well opening (top view) -->
+  <ellipse cx="100" cy="80" rx="70" ry="25" fill="#1e293b" stroke="#475569" stroke-width="3"/>
+  
+  <!-- Well walls -->
+  <rect x="30" y="80" width="140" height="150" fill="url(#stoneTexture)" stroke="#57534e" stroke-width="3"/>
+  
+  <!-- Stone blocks pattern -->
+  <line x1="30" y1="120" x2="170" y2="120" stroke="#44403c" stroke-width="2"/>
+  <line x1="30" y1="160" x2="170" y2="160" stroke="#44403c" stroke-width="2"/>
+  <line x1="30" y1="200" x2="170" y2="200" stroke="#44403c" stroke-width="2"/>
+  
+  <line x1="80" y1="80" x2="80" y2="110" stroke="#44403c" stroke-width="2"/>
+  <line x1="120" y1="90" x2="120" y2="140" stroke="#44403c" stroke-width="2"/>
+  <line x1="60" y1="130" x2="60" y2="180" stroke="#44403c" stroke-width="2"/>
+  
+  <!-- Wooden roof structure -->
+  <path d="M 20 70 L 100 30 L 180 70" fill="none" stroke="#92400e" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 25 75 L 100 38 L 175 75" fill="none" stroke="#b45309" stroke-width="6"/>
+  
+  <!-- Roof support beams -->
+  <rect x="45" y="60" width="8" height="20" fill="#78350f" rx="2"/>
+  <rect x="147" y="60" width="8" height="20" fill="#78350f" rx="2"/>
+  
+  <!-- Mystical glow from well -->
+  <ellipse cx="100" cy="80" rx="60" ry="20" fill="#a78bfa" opacity="0.3"/>
+</svg>
