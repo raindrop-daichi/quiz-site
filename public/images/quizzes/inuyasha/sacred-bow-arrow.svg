@@ -1,40 +1,60 @@
 <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#92400e;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#b45309;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#92400e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#6b3410;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b3410;stop-opacity:1" />
     </linearGradient>
+    <radialGradient id="sacredGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffc0ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff8fff;stop-opacity:0" />
+    </radialGradient>
   </defs>
   
-  <!-- Bow body (yumi) -->
-  <path d="M 100 30 Q 70 80, 75 150 Q 77 220, 100 270" 
-        fill="none" stroke="url(#bowGrad)" stroke-width="8" stroke-linecap="round"/>
-  <path d="M 100 30 Q 130 80, 125 150 Q 123 220, 100 270" 
-        fill="none" stroke="url(#bowGrad)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Traditional Japanese bow (yumi) - asymmetric with longer upper limb -->
+  <path d="M 100 20 Q 60 60, 65 120 Q 68 180, 100 270" 
+        fill="none" stroke="url(#bowGrad)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M 100 20 Q 140 60, 135 120 Q 132 180, 100 270" 
+        fill="none" stroke="url(#bowGrad)" stroke-width="9" stroke-linecap="round"/>
   
-  <!-- Bow string -->
-  <line x1="100" y1="35" x2="100" y2="265" stroke="#e7e5e4" stroke-width="2"/>
+  <!-- Bow wood grain detail -->
+  <path d="M 100 50 Q 65 80, 68 130" 
+        fill="none" stroke="#4a2f1a" stroke-width="1.5" opacity="0.4"/>
+  <path d="M 100 50 Q 135 80, 132 130" 
+        fill="none" stroke="#4a2f1a" stroke-width="1.5" opacity="0.4"/>
   
-  <!-- Decorative wrapping on grip -->
-  <rect x="95" y="140" width="10" height="40" fill="#7c2d12" rx="2"/>
-  <line x1="95" y1="150" x2="105" y2="150" stroke="#fbbf24" stroke-width="1"/>
-  <line x1="95" y1="160" x2="105" y2="160" stroke="#fbbf24" stroke-width="1"/>
-  <line x1="95" y1="170" x2="105" y2="170" stroke="#fbbf24" stroke-width="1"/>
+  <!-- Bow string (taught) -->
+  <line x1="100" y1="25" x2="100" y2="265" stroke="#f5f5dc" stroke-width="2.5"/>
   
-  <!-- Sacred arrow -->
-  <g transform="translate(140, 100) rotate(45 0 0)">
+  <!-- Grip area with traditional wrapping (nakago) -->
+  <rect x="93" y="130" width="14" height="55" fill="#654321" rx="3"/>
+  <line x1="93" y1="140" x2="107" y2="140" stroke="#d4a574" stroke-width="1.2"/>
+  <line x1="93" y1="150" x2="107" y2="150" stroke="#d4a574" stroke-width="1.2"/>
+  <line x1="93" y1="160" x2="107" y2="160" stroke="#d4a574" stroke-width="1.2"/>
+  <line x1="93" y1="170" x2="107" y2="170" stroke="#d4a574" stroke-width="1.2"/>
+  
+  <!-- Sacred arrow with pink spiritual energy -->
+  <g transform="translate(140, 120) rotate(50 0 0)">
+    <!-- Sacred pink glow around arrow -->
+    <ellipse cx="40" cy="0" rx="60" ry="15" fill="url(#sacredGlow)" opacity="0.6"/>
+    
     <!-- Arrow shaft -->
-    <line x1="0" y1="0" x2="80" y2="0" stroke="#b45309" stroke-width="4"/>
+    <line x1="-5" y1="0" x2="85" y2="0" stroke="#8b6f47" stroke-width="4.5"/>
     
-    <!-- Arrow head -->
-    <polygon points="80,0 70,-6 70,6" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <!-- Arrow tip (spiritual/metal) -->
+    <polygon points="85,0 73,-7 75,0 73,7" fill="#ffc0ff" stroke="#ff8fff" stroke-width="1.5"/>
+    <polygon points="85,0 75,-5 76.5,0 75,5" fill="#ffe0ff"/>
     
-    <!-- Fletching -->
-    <polygon points="0,0 -12,-8 -8,0" fill="#ef4444" opacity="0.8"/>
-    <polygon points="0,0 -12,8 -8,0" fill="#dc2626" opacity="0.8"/>
+    <!-- Fletching (feathers) -->
+    <path d="M -5 0 L -15 -10 L -8 0 Z" fill="#ff69b4" opacity="0.85"/>
+    <path d="M -5 0 L -15 10 L -8 0 Z" fill="#ff1493" opacity="0.85"/>
+    <path d="M -5 0 L -13 -7 L -7 -1 Z" fill="#ffb6c1" opacity="0.7"/>
+    <path d="M -5 0 L -13 7 L -7 1 Z" fill="#ff8fa3" opacity="0.7"/>
     
-    <!-- Sacred glow -->
-    <circle cx="75" cy="0" r="12" fill="#fef3c7" opacity="0.3"/>
+    <!-- Spiritual energy particles -->
+    <circle cx="60" cy="-8" r="2.5" fill="#ffc0ff" opacity="0.8"/>
+    <circle cx="70" cy="7" r="2" fill="#ff8fff" opacity="0.7"/>
+    <circle cx="50" cy="10" r="2" fill="#ffb6ff" opacity="0.6"/>
+    <circle cx="30" cy="-6" r="1.8" fill="#ffc0ff" opacity="0.7"/>
   </g>
 </svg>
